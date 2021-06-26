@@ -1,0 +1,16 @@
+<div class="render">
+    <div class="render-box">
+        <h2>{{name}}</h2>
+        <h3>Capital: <p class="text">{{capital}}</p></h3>
+        <h3>Population: <p class="text">{{population}}</p></h3>
+        <ul>
+            <h3>Languages:</h3>
+            {{#each languages}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="render-img">
+        <img src="{{flag}}" alt="{{name}}">
+    </div>
+</div>
